@@ -26,4 +26,4 @@ try {
   console.error(e);
 }
 
-mockServer.stop();
+await mockServer.stop();
