@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "scripts": {
+    "biome:check": "biome ci",
+    "biome:fix": "biome check --write",
+    "dev": "node --watch --experimental-strip-types src/app.ts",
+    "sort-package-json:check": "sort-package-json --check",
+    "sort-package-json:fix": "sort-package-json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "mockttp": "^4.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "@types/node": "^22.18.3",
+    "sort-package-json": "^3.4.0",
+    "typescript": "^5.9.2"
+  }
+}
